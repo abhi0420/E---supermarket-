@@ -1,0 +1,1406 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+      integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+      crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+      integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+      crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+      integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+      crossorigin="anonymous"></script>
+      <style>
+      hr{
+      border: 1px solid black;
+      }
+      </style>
+    </head>
+    <body>
+        <div class="navbar">
+<div class="logo">
+<img src="Images/logo.jpg" width="250px" height="200px">
+</div>  
+    <nav class="nv">
+      <ul>
+    <li><a href="home.php" class="nav">Home</a></li>
+    <li><a href="products.html" class="nav">Products</a></li>
+    <li><a href="Aboutus.php" class="nav">About</a></li>
+    <li><a href="contactus.php" class="nav">Contact</a></li>
+    <li><a href="account2.php" class="nav">Account</a></li>
+      </ul>
+
+  
+
+
+    </nav>
+   
+
+</div>
+      <!-- Nav -->
+      <nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
+        <div class="row">
+          <div class="col">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span
+            class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear Cart</button></div>
+          </div>
+        </nav>
+        <!-- Main -->
+        <div class="container">
+          <hr id="fruits">
+          <h1 class="h1 text-center mb-4">Fruits and vegetables</h1>
+          <div class="row">
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Images/ava.jpg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Maluma Avacado</h4>
+                  <p class="card-text">Price: $3.5</p>
+                  <a href="#" data-name="Maluma-Avacado" data-price="3.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Images/plum.jpg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Plum</h4>
+                  <p class="card-text">Price: $2.5</p>
+                  <a href="#" data-name="Plum" data-price="2.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Images/kiwi.jpg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Kiwifruit</h4>
+                  <p class="card-text">Price: $2</p>
+                  <a href="#" data-name="Kiwifruit" data-price="2" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Images/orange.jpg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Orange</h4>
+                  <p class="card-text">Price: $0.5</p>
+                  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/banana.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Banana</h4>
+                  <p class="card-text">Price: $1.22</p>
+                  <a href="#" data-name="Banana" data-price="1.22" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Images/broc.jpeg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Broccoli</h4>
+                  <p class="card-text">Price: $2.5</p>
+                  <a href="#" data-name="Broccoli" data-price="2.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/apples.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Shimla Apples</h4>
+                  <p class="card-text">Price: $1.22</p>
+                  <a href="#" data-name="Shimla-apples" data-price="1.22" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/onions.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Onions</h4>
+                  <p class="card-text">Price: $2.22</p>
+                  <a href="#" data-name="Onions" data-price="2.22" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/potatoes.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Potato</h4>
+                  <p class="card-text">Price: $3</p>
+                  <a href="#" data-name="Potato" data-price="3" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/parsley.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Fresh Parsley</h4>
+                  <p class="card-text">Price: $1</p>
+                  <a href="#" data-name="Parsley" data-price="1" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/carrots.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Carrots</h4>
+                  <p class="card-text">Price: $3.2</p>
+                  <a href="#" data-name="Carrots" data-price="3.2" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/guava.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Green Hybrid Guavas</h4>
+                  <p class="card-text">Price: $3</p>
+                  <a href="#" data-name="Green-Hybrid-Guavas" data-price="3" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <hr id="bakery">
+          <h1 class="h1 text-center mb-4">Bakery Items</h1>
+          <div class="row">
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Images/macarons.jpg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Macarons Box of 6</h4>
+                  <p class="card-text">Price: $4</p>
+                  <a href="#" data-name="Macarons-Box-of-6" data-price="4" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Images/pizza.jpg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">English Oven Pizza Base</h4>
+                  <p class="card-text">Price: $2.5</p>
+                  <a href="#" data-name="English-Oven-Pizza-Base" data-price="2.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Images/cookies.jpg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Chocolate chip cookies</h4>
+                  <p class="card-text">Price: $6</p>
+                  <a href="#" data-name="Chocolate-chip-cookies" data-price="6" class="add-to-cart btn btn-primary">Add to
+                  cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Images/cupcakes.jpeg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Assorted Cupcakes Box of 6</h4>
+                  <p class="card-text">Price: $7</p>
+                  <a href="#" data-name="Assorted-Cupcakes-Box-of-6" data-price="7" class="add-to-cart btn btn-primary">Add to
+                  cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Images/bread.jpg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">English Oven 100% Whole Wheat Bread</h4>
+                  <p class="card-text">Price: $3</p>
+                  <a href="#" data-name="English-Oven-100%-Whole-Wheat-Bread" data-price="3"
+                  class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Images/donuts.jpg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Assorted Donuts Box of 6</h4>
+                  <p class="card-text">Price: $7</p>
+                  <a href="#" data-name="Assorted-Donuts-Box-of-6" data-price="7" class="add-to-cart btn btn-primary">Add to
+                  cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Images/croissants.jpg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">All Butter Soft Croissants</h4>
+                  <p class="card-text">Price: $8</p>
+                  <a href="#" data-name="All-Butter-Soft-Croissants" data-price="8" class="add-to-cart btn btn-primary">Add to
+                  cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Images/cake.jpg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Vanilla Raspberry cake</h4>
+                  <p class="card-text">Price: $5.5</p>
+                  <a href="#" data-name="Vanilla-Raspberry-Cake" data-price="5.5" class="add-to-cart btn btn-primary">Add
+                  to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Images/brownies.jpg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Fudge Brownies</h4>
+                  <p class="card-text">Price: $3</p>
+                  <a href="#" data-name="Fudge-Brownies" data-price="3" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr id="foodgrains">
+          <h1 class="h1 text-center mb-4">Foodgrains, Oils & Masalas</h1>
+          <div class="row">
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Images/ashir.jpg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Atta - Whole Wheat</h4>
+                  <p class="card-text">Price: $4.5</p>
+                  <a href="#" data-name="Atta-Whole-Wheat" data-price="4.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/dal.jpeg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Moong Dal</h4>
+                  <p class="card-text">Price: $6</p>
+                  <a href="#" data-name="Moong-dal" data-price="6" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Images/peanuts.jpeg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Peanuts</h4>
+                  <p class="card-text">Price: $5</p>
+                  <a href="#" data-name="Peanuts" data-price="5" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/rajma.jpeg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Red Kidney Beans</h4>
+                  <p class="card-text">Price: $5</p>
+                  <a href="#" data-name="Red-kidney-Beans" data-price="5" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/oil.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Edible Cooking Oil</h4>
+                  <p class="card-text">Price: $7</p>
+                  <a href="#" data-name="Edible-Cooking-Oil" data-price="7" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/redchilli.jpeg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">kashmiri Chilli Powder</h4>
+                  <p class="card-text">Price: $3</p>
+                  <a href="#" data-name="kashmiri-Chilli-Powder" data-price="3" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/haldi.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Turmeric Powder</h4>
+                  <p class="card-text">Price: $3</p>
+                  <a href="#" data-name="Turmeric-Powder" data-price="3" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/cumin.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Cumin Seeds</h4>
+                  <p class="card-text">Price: $3</p>
+                  <a href="#" data-name="Cumin-Seeds" data-price="3" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/cinnamon.jpeg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Cinnamon Sticks</h4>
+                  <p class="card-text">Price: $2</p>
+                  <a href="#" data-name="Cinnamon-Sticks" data-price="2" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr id="dairy">
+          <h1 class="h1 text-center mb-4">Dairy Store and Eggs</h1>
+          <div class="row">
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Images/amul.jpg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Amul Toned Milk 200ml</h4>
+                  <p class="card-text">Price: $2</p>
+                  <a href="#" data-name="Amul-toned-milk-200ml" data-price="2" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/cheese.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">GO Cheese Slices</h4>
+                  <p class="card-text">Price: $3.5</p>
+                  <a href="#" data-name="GO-Cheese-Slices" data-price="3.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Images/butter.jpeg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Amul Butter 500gms</h4>
+                  <p class="card-text">Price: $4</p>
+                  <a href="#" data-name="Amul-Butter-500gms" data-price="4" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/milkmaid.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Nestle Milkamid</h4>
+                  <p class="card-text">Price: $6</p>
+                  <a href="#" data-name="Nestle-Milkamid" data-price="6" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/curd.jpeg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Dannon Lowfat Yogurt</h4>
+                  <p class="card-text">Price: $4.5</p>
+                  <a href="#" data-name="Dannon-Lowfat-Yogurt" data-price="4.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/paneer.jpeg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Nandini Paneer 250gms</h4>
+                  <p class="card-text">Price: $4</p>
+                  <a href="#" data-name="Nandini-Paneer-250gms" data-price="4" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/tofu.jpeg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Tofu 350gms</h4>
+                  <p class="card-text">Price: $3</p>
+                  <a href="#" data-name="Tofu-350gms" data-price="3" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/mistidoi.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Epigamia Mishti Doi</h4>
+                  <p class="card-text">Price: $6</p>
+                  <a href="#" data-name="Epigamia-Mishti-Doi" data-price="6" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/egg.jpeg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Organic Eggs</h4>
+                  <p class="card-text">Price: $4</p>
+                  <a href="#" data-name="Organic-Eggs" data-price="4" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr id="cleaning">
+          <h1 class="h1 text-center mb-4">Cleaning and Household</h1>
+          <div class="row">
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Images/sani.jpg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Lifebuoy Hand sanitizer</h4>
+                  <p class="card-text">Price: $4</p>
+                  <a href="#" data-name="Lifebuoy-Hand-Sanitizer" data-price="4" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/lizol.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Lizol Floor Cleaner</h4>
+                  <p class="card-text">Price: $3.5</p>
+                  <a href="#" data-name="Lizol-Floor-Cleaner" data-price="3.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Images/det.jpeg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Dettol Antiseptic</h4>
+                  <p class="card-text">Price: $4</p>
+                  <a href="#" data-name="Dettol-Antiseptic" data-price="4" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/surf.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">SurfExcel Quickwash</h4>
+                  <p class="card-text">Price: $5</p>
+                  <a href="#" data-name="SurfExcel-Quickwash" data-price="5" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/goodnight.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Goodnight Power Active+</h4>
+                  <p class="card-text">Price: $4.5</p>
+                  <a href="#" data-name="Goodnight-Power-Active+" data-price="4.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/savlon.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Savlon Disinfectant Spray</h4>
+                  <p class="card-text">Price: $7</p>
+                  <a href="#" data-name="Savlon-Disinfectant-Spray" data-price="7" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/freshners.jpeg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Godrej Room Freshners</h4>
+                  <p class="card-text">Price: $9</p>
+                  <a href="#" data-name="Godrej-Room-Freshners" data-price="9" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/vim.jpeg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Vim Dishwasher</h4>
+                  <p class="card-text">Price: $3</p>
+                  <a href="#" data-name="Vim-Dishwasher" data-price="3" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/comfort.jpeg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Comfort Fbric Conditioner</h4>
+                  <p class="card-text">Price: $6.5</p>
+                  <a href="#" data-name="Comfort-Fbric-Conditioner" data-price="6.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr id="selfcare">
+          <h1 class="h1 text-center mb-4">Personal Care</h1>
+          <div class="row">
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Images/gel.jpg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Plum Moisturizer</h4>
+                  <p class="card-text">Price: $9.5</p>
+                  <a href="#" data-name="Plum-Moisturizer" data-price="9.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/aloe.jpeg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Pure Aloevera gel</h4>
+                  <p class="card-text">Price: $3</p>
+                  <a href="#" data-name="Pure-Aloevera-gel" data-price="3" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Images/toothpaste.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Sensodyne Toothpaste</h4>
+                  <p class="card-text">Price: $5</p>
+                  <a href="#" data-name="Sensodyne-Toothpaste" data-price="5" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/showergel.jpeg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Cherry Blossom Showergel</h4>
+                  <p class="card-text">Price: $10</p>
+                  <a href="#" data-name="Cherry-Blossom-Showergel" data-price="10" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/shampoo.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Hair Shampoo and Conditioner</h4>
+                  <p class="card-text">Price: $10</p>
+                  <a href="#" data-name="Hair-Shampoo-and-Conditioner" data-price="10" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/lipbalm.jpeg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Laneige Lip Sleeping Mask</h4>
+                  <p class="card-text">Price: $8.5</p>
+                  <a href="#" data-name="Laneige-Lip-Sleeping-Mask" data-price="8.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/soaps.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Handmade Soaps</h4>
+                  <p class="card-text">Price: $6</p>
+                  <a href="#" data-name="Handmade-Soaps" data-price="6" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/comb.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Vega Comb Set</h4>
+                  <p class="card-text">Price: $8</p>
+                  <a href="#" data-name="Vega-Comb-Set" data-price="8" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/kajal.jpeg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Soultree Kajals</h4>
+                  <p class="card-text">Price: $9</p>
+                  <a href="#" data-name="Soultree-Kajals" data-price="9" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr id="beverages">
+          <h1 class="h1 text-center mb-4">Drinks and Beverages</h1>
+          <div class="row">
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Images/taj.jpg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Taj Mahal Tea House</h4>
+                  <p class="card-text">Price: $7.5</p>
+                  <a href="#" data-name="Taj-Mahal-Tea-House" data-price="7.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/horlicks.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Horlicks Classic Malt</h4>
+                  <p class="card-text">Price: $4</p>
+                  <a href="#" data-name="Horlicks-Classic-Malt" data-price="4" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Images/coco.jpeg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Tender Coconut Water</h4>
+                  <p class="card-text">Price: $3</p>
+                  <a href="#" data-name="Tender-Coconut-Water" data-price="3" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/coffee.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Fresh Roasted Coffee</h4>
+                  <p class="card-text">Price: $5</p>
+                  <a href="#" data-name="Fresh-Roasted-Coffee" data-price="5" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/paper.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Paperboat Pack of 3</h4>
+                  <p class="card-text">Price: $8</p>
+                  <a href="#" data-name="Paperboat-Pack-of-3" data-price="8" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/redbull.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Redbull</h4>
+                  <p class="card-text">Price: $3</p>
+                  <a href="#" data-name="Redbull" data-price="3" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/bourn.jpeg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Cadbury Bournvita</h4>
+                  <p class="card-text">Price: $3</p>
+                  <a href="#" data-name="Cadbury-Bournvita" data-price="3" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/tropi.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Tropicana Orange Juice</h4>
+                  <p class="card-text">Price: $4.2</p>
+                  <a href="#" data-name="Tropicana-Orange-Juice" data-price="4.2" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/rawp.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Raw Pressery Life</h4>
+                  <p class="card-text">Price: $3</p>
+                  <a href="#" data-name="Raw-Pressery-Life" data-price="3" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr id="snack">
+          <h1 class="h1 text-center mb-4">Snacks Store</h1>
+          <div class="row">
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Images/na.jpg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Cornitos Nacho Crisps</h4>
+                  <p class="card-text">Price: $4.5</p>
+                  <a href="#" data-name="Cornitos-Nacho-Crisps" data-price="4.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/biscuit.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Dark Fantasy Choco Fills</h4>
+                  <p class="card-text">Price: $3</p>
+                  <a href="#" data-name="Dark-Fantasy-Choco-Fills" data-price="3" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Images/monaco.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Monaco Cheeselings</h4>
+                  <p class="card-text">Price: $4</p>
+                  <a href="#" data-name="Monaco-Cheeselings" data-price="4" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/aloo.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Aloo Bhujia</h4>
+                  <p class="card-text">Price: $3</p>
+                  <a href="#" data-name="Aloo-Bhujia" data-price="3" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/cup.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Maggi Cuppa Masala</h4>
+                  <p class="card-text">Price: $3</p>
+                  <a href="#" data-name="Maggi-Cuppa-Masala" data-price="3" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/pop.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Act II Popcorn</h4>
+                  <p class="card-text">Price: $2.5</p>
+                  <a href="#" data-name="Act-II-Popcorn" data-price="2.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/lays.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Lays 3 Exotic Flavours</h4>
+                  <p class="card-text">Price: $7</p>
+                  <a href="#" data-name="Lays 2 Exotic Flavours" data-price="7" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/soup.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Knorr Sweet Corn Soup</h4>
+                  <p class="card-text">Price: $4</p>
+                  <a href="#" data-name="Knorr-Sweet-Corn-Soup" data-price="4" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/nuggets.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">McCain Veggie Nuggets</h4>
+                  <p class="card-text">Price: $4.5</p>
+                  <a href="#" data-name="McCain-Veggie-Nuggets" data-price="4.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr id="gourmet">
+          <h1 class="h1 text-center mb-4">Gourmet and World Food</h1>
+          <div class="row">
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Images/chocolate.jpg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Assorted Belgian Chocolates</h4>
+                  <p class="card-text">Price: $9.5</p>
+                  <a href="#" data-name="Assorted-Belgian-Chocolates" data-price="9.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/sauce.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Tobasco Sauce</h4>
+                  <p class="card-text">Price: $10</p>
+                  <a href="#" data-name="Tobasco-sauce" data-price="10" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Images/speg.jpeg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Spaghetti</h4>
+                  <p class="card-text">Price: $8</p>
+                  <a href="#" data-name="Spaghetti" data-price="8" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/cereal.jpeg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Honey Nut Cheerios</h4>
+                  <p class="card-text">Price: $7</p>
+                  <a href="#" data-name="Honey-Nut-Cheerios" data-price="7" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/nut.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Nutella Spread</h4>
+                  <p class="card-text">Price: $6</p>
+                  <a href="#" data-name="Nutella-Spread" data-price="6" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/olive.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Fragata Spanish Olives</h4>
+                  <p class="card-text">Price: $8.5</p>
+                  <a href="#" data-name="Fragata-Spanish-Olives" data-price="8.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/merci.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Merci Finest Selection</h4>
+                  <p class="card-text">Price: $12</p>
+                  <a href="#" data-name="Merci-Finest-Selection" data-price="12" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/marsh.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">JetPuffed Marshmallows</h4>
+                  <p class="card-text">Price: $8</p>
+                  <a href="#" data-name="JetPuffed-Marshmallows" data-price="8" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/pb.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Peanut Butter</h4>
+                  <p class="card-text">Price: $6.5</p>
+                  <a href="#" data-name="Peanut-Butter" data-price="6.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr id="eco">
+          <h1 class="h1 text-center mb-4">Ecofriendly and Organic Products</h1>
+          <div class="row">
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Images/straw.jpeg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Steel Reusable Straws</h4>
+                  <p class="card-text">Price: $5.5</p>
+                  <a href="#" data-name="Steel-Reusable-Straws" data-price="5.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/bag.jpeg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Reusable Cotton Bags</h4>
+                  <p class="card-text">Price: $3</p>
+                  <a href="#" data-name="Reusable-cotton-bags" data-price="3" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Images/honey.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Organic Farm Honey</h4>
+                  <p class="card-text">Price: $3</p>
+                  <a href="#" data-name="Organic-farm-honey" data-price="3" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/bowl.jpeg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Coconut Shell Bowl With Spoon</h4>
+                  <p class="card-text">Price: $2</p>
+                  <a href="#" data-name="Coconut-shell-bowl-spoon" data-price="2" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/plate.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Bamboo Plates</h4>
+                  <p class="card-text">Price: $5</p>
+                  <a href="#" data-name="bamboo-plates" data-price="5" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/rice.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Brown organic rice</h4>
+                  <p class="card-text">Price: $4.5</p>
+                  <a href="#" data-name="Brown-organic-rice" data-price="4.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/brush.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Bamboo Brushes</h4>
+                  <p class="card-text">Price: $3.5</p>
+                  <a href="#" data-name="Bamboo-Brushes" data-price="3.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/apricots.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Natural Dried Apricots</h4>
+                  <p class="card-text">Price: $5.2</p>
+                  <a href="#" data-name="Natural-Dried-Apricots" data-price="5.2" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top"
+                src="Images/buds.jpg"
+                alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Bamboo Cotton Buds</h4>
+                  <p class="card-text">Price: $3</p>
+                  <a href="#" data-name="Bamboo-Cotton-buds" data-price="3" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <table class="show-cart table">
+                </table>
+                <div>Total price: $<span class="total-cart"></span></div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+       <a href="payments.php"> <button type="button" class="btn btn-primary">Order now</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </body>
+      <script type="text/javascript">
+
+      var shoppingCart = (function () {
+
+      cart = [];
+
+      function Item(name, price, count) {
+      this.name = name;
+      this.price = price;
+      this.count = count;
+      }
+
+      function saveCart() {
+      sessionStorage.setItem('shoppingCart', JSON.stringify(cart));
+      }
+
+      function loadCart() {
+      cart = JSON.parse(sessionStorage.getItem('shoppingCart'));
+      }
+      if (sessionStorage.getItem("shoppingCart") != null) {
+      loadCart();
+      }
+
+      var obj = {};
+      // Add to cart
+      obj.addItemToCart = function (name, price, count) {
+      for (var item in cart) {
+      if (cart[item].name === name) {
+      cart[item].count++;
+      saveCart();
+      return;
+      }
+      }
+      var item = new Item(name, price, count);
+      cart.push(item);
+      saveCart();
+      }
+      // Set count from item
+      obj.setCountForItem = function (name, count) {
+      for (var i in cart) {
+      if (cart[i].name === name) {
+      cart[i].count = count;
+      break;
+      }
+      }
+      };
+      // Remove item from cart
+      obj.removeItemFromCart = function (name) {
+      for (var item in cart) {
+      if (cart[item].name === name) {
+      cart[item].count--;
+      if (cart[item].count === 0) {
+      cart.splice(item, 1);
+      }
+      break;
+      }
+      }
+      saveCart();
+      }
+      // Remove all items from cart
+      obj.removeItemFromCartAll = function (name) {
+      for (var item in cart) {
+      if (cart[item].name === name) {
+      cart.splice(item, 1);
+      break;
+      }
+      }
+      saveCart();
+      }
+      // Clear cart
+      obj.clearCart = function () {
+      cart = [];
+      saveCart();
+      }
+      // Count cart
+      obj.totalCount = function () {
+      var totalCount = 0;
+      for (var item in cart) {
+      totalCount += cart[item].count;
+      }
+      return totalCount;
+      }
+      // Total cart
+      obj.totalCart = function () {
+      var totalCart = 0;
+      for (var item in cart) {
+      totalCart += cart[item].price * cart[item].count;
+      }
+      return Number(totalCart.toFixed(2));
+      }
+      // List cart
+      obj.listCart = function () {
+      var cartCopy = [];
+      for (i in cart) {
+      item = cart[i];
+      itemCopy = {};
+      for (p in item) {
+      itemCopy[p] = item[p];
+      }
+      itemCopy.total = Number(item.price * item.count).toFixed(2);
+      cartCopy.push(itemCopy)
+      }
+      return cartCopy;
+      }
+
+      return obj;
+      })();
+    
+      // Add item
+      $('.add-to-cart').click(function (event) {
+      event.preventDefault();
+      var name = $(this).data('name');
+      var price = Number($(this).data('price'));
+      shoppingCart.addItemToCart(name, price, 1);
+      displayCart();
+      });
+      // Clear items
+      $('.clear-cart').click(function () {
+      shoppingCart.clearCart();
+      displayCart();
+      });
+      function displayCart() {
+      var cartArray = shoppingCart.listCart();
+      var output = "";
+      for (var i in cartArray) {
+      output += "<tr>"
+        + "<td>" + cartArray[i].name + "</td>"
+        + "<td>(" + cartArray[i].price + ")</td>"
+        + "<td><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name=" + cartArray[i].name + ">-</button>"
+          + "<input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>"
+        + "<button class='plus-item btn btn-primary input-group-addon' data-name=" + cartArray[i].name + ">+</button></div></td>"
+        + "<td><button class='delete-item btn btn-danger' data-name=" + cartArray[i].name + ">X</button></td>"
+        + " = "
+        + "<td>" + cartArray[i].total + "</td>"
+      + "</tr>";
+      }
+      $('.show-cart').html(output);
+      $('.total-cart').html(shoppingCart.totalCart());
+      $('.total-count').html(shoppingCart.totalCount());
+      }
+      // Delete item button
+      $('.show-cart').on("click", ".delete-item", function (event) {
+      var name = $(this).data('name')
+      shoppingCart.removeItemFromCartAll(name);
+      displayCart();
+      })
+      // -1
+      $('.show-cart').on("click", ".minus-item", function (event) {
+      var name = $(this).data('name')
+      shoppingCart.removeItemFromCart(name);
+      displayCart();
+      })
+      // +1
+      $('.show-cart').on("click", ".plus-item", function (event) {
+      var name = $(this).data('name')
+      shoppingCart.addItemToCart(name);
+      displayCart();
+      })
+      // Item count input
+      $('.show-cart').on("change", ".item-count", function (event) {
+      var name = $(this).data('name');
+      var count = Number($(this).val());
+      shoppingCart.setCountForItem(name, count);
+      displayCart();
+      });
+      displayCart();
+      </script>
+    </html>
+<style type="text/css">
+  
+body {
+  padding-top: 80px;
+
+
+}
+
+.show-cart li {
+  display: flex;
+}
+.card {
+  margin-bottom: 20px;
+}
+.card-img-top {
+  width: 200px;
+  height: 200px;
+  align-self: center;
+}
+.navbar
+{
+  display: flex;
+  align-items: right;
+  padding: 20px;
+
+}
+.nv{
+  flex: 1;
+  text-align: right;
+}
+nav ul
+{
+  display: inline-block;
+  list-style-type: none;
+
+}
+nav ul li
+{
+  display: inline-block;
+  margin-right: 20px;
+}
+.nav
+{
+  text-decoration: none;
+  color: #555;
+}
+</style>
